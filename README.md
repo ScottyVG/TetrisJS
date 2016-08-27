@@ -4,7 +4,7 @@ drMario is my personal project to practice material taught during Galvanize quar
 
 This project will be built with HTML, CSS, JavaScript, phaser.io, webGL & Canvas.
 
-#Technical Requirements
+###Technical Requirements
  Have valid, well-indented, and semantic HTML.
  Have valid, well-indented, and minimally-specific CSS.
  Have linted, readable, and concise JavaScript.
@@ -14,7 +14,7 @@ This project will be built with HTML, CSS, JavaScript, phaser.io, webGL & Canvas
  Connect to at least one external web API via Ajax.
  Be deployed to a production environment.
 
-#Bonuses
+###Bonuses
  Customize the color palette or theme of your front-end framework.
  Optimize for various viewport sizes using responsive design.
  Develop a game instead of an application.
