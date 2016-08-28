@@ -14,9 +14,9 @@ drMarioGame.Boot.prototype = {
 
     //scaling options
     this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+    // the game will show as large as it can to fit the browser space, but it wont’ show more than 160x320 pixels of the game world, as that’s the limit we defined in main.js.
 
     //have the game centered horizontally
-    this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
     this.scale.pageAlignVertically = true;
     this.scale.pageAlignHorizontally = true;
 
