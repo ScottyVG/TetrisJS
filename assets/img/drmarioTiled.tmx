@@ -42,14 +42,14 @@
 989,0,0,0,0,0,0,0,0,990,
 989,0,0,0,0,0,0,0,0,990,
 989,0,0,0,0,0,0,0,0,990,
-989,0,0,0,116,0,0,0,0,990,
-989,0,0,0,116,0,0,0,0,990,
-989,0,0,0,116,0,0,0,0,990,
-989,0,0,0,116,116,0,0,0,990,
-989,0,0,0,0,116,116,0,0,990,
-989,0,0,0,0,116,0,0,0,990,
-989,0,0,0,0,116,0,0,0,990,
-989,0,0,0,116,116,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
 989,0,0,0,0,0,0,0,0,990,
 989,989,989,989,989,990,990,990,990,990
 </data>
@@ -58,83 +58,97 @@
   <object id="9" gid="8" x="112" y="16" width="16" height="16">
    <properties>
     <property name="color" value="er"/>
+    <property name="sprite" value="redVirus"/>
     <property name="type" value="virus"/>
    </properties>
   </object>
   <object id="10" gid="12" x="128" y="16" width="16" height="16">
    <properties>
     <property name="color" value="ey"/>
+    <property name="sprite" value="yellowVirus"/>
     <property name="type" value="virus"/>
    </properties>
   </object>
   <object id="11" gid="16" x="144" y="16" width="16" height="16">
    <properties>
     <property name="color" value="eb"/>
+    <property name="sprite" value="blueVirus"/>
     <property name="type" value="virus"/>
    </properties>
   </object>
   <object id="18" gid="6" x="80" y="16" width="16" height="16">
    <properties>
     <property name="color" value="rr"/>
+    <property name="sprite" value="rightRed"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="19" gid="5" x="64" y="16" width="16" height="16">
    <properties>
     <property name="color" value="lr"/>
+    <property name="sprite" value="leftRed"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="20" gid="9" x="32" y="16" width="16" height="16">
    <properties>
     <property name="color" value="ly"/>
+    <property name="sprite" value="leftYellow"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="21" gid="10" x="48" y="16" width="16" height="16">
    <properties>
     <property name="color" value="ry"/>
+    <property name="sprite" value="rightYellow"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="22" gid="13" x="0" y="16" width="16" height="16">
    <properties>
     <property name="color" value="lb"/>
+    <property name="sprite" value="leftBlue"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="23" gid="14" x="16" y="16" width="16" height="16">
    <properties>
     <property name="color" value="rb"/>
+    <property name="sprite" value="rightBlue"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="24" gid="7" x="112" y="32" width="16" height="16">
    <properties>
     <property name="color" value="br"/>
+    <property name="sprite" value="singleRed"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="25" gid="11" x="128" y="32" width="16" height="16">
    <properties>
     <property name="color" value="by"/>
+    <property name="sprite" value="singleYellow"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="26" gid="15" x="144" y="32" width="16" height="16">
    <properties>
     <property name="color" value="bb"/>
+    <property name="sprite" value="singleBlue"/>
     <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="32" gid="1" x="64" y="48" width="16" height="16">
    <properties>
     <property name="item" value="playerStart"/>
+    <property name="sprite" value="leftGreen"/>
    </properties>
   </object>
   <object id="33" gid="2" x="80" y="48" width="16" height="16">
    <properties>
     <property name="item" value="playerStart"/>
+    <property name="sprite" value="rightGreen"/>
    </properties>
   </object>
  </objectgroup>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="1" height="1" tilewidth="16" tileheight="16" nextobjectid="1">
+ <tileset firstgid="1" name="drMarioClone" tilewidth="16" tileheight="16" tilecount="20" columns="4">
+  <image source="tiles/drMarioClone.png" trans="ff55ff" width="64" height="80"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="1" height="1">
+  <data encoding="csv">
+2
+</data>
+ </layer>
+</map>

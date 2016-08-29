@@ -29,7 +29,8 @@ drMarioGame.Game.prototype = {
     //create pill
     // TODO: have the game create a random pill color combo
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
-    this.player = this.game.add.sprite(result[0].x, result[0].y, 'playerStart');
+      // this.player = this.game.add.sprite(result[0].x, result[0].y, 'playerStart');
+    this.player = this.game.add.sprite('playerStart');
     this.game.physics.arcade.enable(this.player);
 
 
@@ -39,7 +40,7 @@ drMarioGame.Game.prototype = {
   },
 
   createVirus: function() {
-  //   create virus's
+    //   create virus's
     this.virus = this.game.add.group();
     this.virus.enableBody = true;
     var item;

@@ -12,7 +12,7 @@
          "y":0
         }, 
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 989, 989, 989, 989, 0, 0, 990, 990, 990, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 116, 0, 0, 0, 0, 990, 989, 0, 0, 0, 116, 0, 0, 0, 0, 990, 989, 0, 0, 0, 116, 0, 0, 0, 0, 990, 989, 0, 0, 0, 116, 116, 0, 0, 0, 990, 989, 0, 0, 0, 0, 116, 116, 0, 0, 990, 989, 0, 0, 0, 0, 116, 0, 0, 0, 990, 989, 0, 0, 0, 0, 116, 0, 0, 0, 990, 989, 0, 0, 0, 116, 116, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 989, 989, 989, 989, 990, 990, 990, 990, 990],
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 989, 989, 989, 989, 0, 0, 990, 990, 990, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 989, 989, 989, 989, 990, 990, 990, 990, 990],
          "height":20,
          "name":"blockedLayer",
          "opacity":1,
@@ -35,11 +35,13 @@
                  "properties":
                     {
                      "color":"er",
+                     "sprite":"redVirus",
                      "type":"virus"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -57,11 +59,13 @@
                  "properties":
                     {
                      "color":"ey",
+                     "sprite":"yellowVirus",
                      "type":"virus"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -79,11 +83,13 @@
                  "properties":
                     {
                      "color":"eb",
+                     "sprite":"blueVirus",
                      "type":"virus"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -101,11 +107,13 @@
                  "properties":
                     {
                      "color":"rr",
+                     "sprite":"rightRed",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -123,11 +131,13 @@
                  "properties":
                     {
                      "color":"lr",
+                     "sprite":"leftRed",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -145,11 +155,13 @@
                  "properties":
                     {
                      "color":"ly",
+                     "sprite":"leftYellow",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -167,11 +179,13 @@
                  "properties":
                     {
                      "color":"ry",
+                     "sprite":"rightYellow",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -189,11 +203,13 @@
                  "properties":
                     {
                      "color":"lb",
+                     "sprite":"leftBlue",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -211,11 +227,13 @@
                  "properties":
                     {
                      "color":"rb",
+                     "sprite":"rightBlue",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -233,11 +251,13 @@
                  "properties":
                     {
                      "color":"br",
+                     "sprite":"singleRed",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -255,11 +275,13 @@
                  "properties":
                     {
                      "color":"by",
+                     "sprite":"singleYellow",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -277,11 +299,13 @@
                  "properties":
                     {
                      "color":"bb",
+                     "sprite":"singleBlue",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
                      "color":"string",
+                     "sprite":"string",
                      "type":"string"
                     },
                  "rotation":0,
@@ -298,11 +322,13 @@
                  "name":"",
                  "properties":
                     {
-                     "item":"playerStart"
+                     "item":"playerStart",
+                     "sprite":"leftGreen"
                     },
                  "propertytypes":
                     {
-                     "item":"string"
+                     "item":"string",
+                     "sprite":"string"
                     },
                  "rotation":0,
                  "type":"",
@@ -318,11 +344,13 @@
                  "name":"",
                  "properties":
                     {
-                     "item":"playerStart"
+                     "item":"playerStart",
+                     "sprite":"rightGreen"
                     },
                  "propertytypes":
                     {
-                     "item":"string"
+                     "item":"string",
+                     "sprite":"string"
                     },
                  "rotation":0,
                  "type":"",
