@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="10" height="20" tilewidth="16" tileheight="16" nextobjectid="18">
+ <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="3520" columns="44">
+  <image source="tiles.png" trans="ff55ff" width="705" height="1280"/>
+ </tileset>
+ <layer name="backgroundLayer" width="10" height="20">
+  <data encoding="csv">
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96,
+96,96,96,96,96,96,96,96,96,96
+</data>
+ </layer>
+ <layer name="blockedLayer" width="10" height="20">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+970,970,970,970,0,0,969,969,969,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,0,0,0,0,0,0,0,0,969,
+970,970,970,970,970,969,969,969,969,969
+</data>
+ </layer>
+ <objectgroup name="objectsLayer">
+  <object id="1" gid="2377" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="sprite" value="greenLeft"/>
+    <property name="type" value="playerStart"/>
+   </properties>
+  </object>
+  <object id="2" gid="2378" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="sprite" value="rightGreen"/>
+    <property name="type" value="playerStart"/>
+   </properties>
+  </object>
+  <object id="3" gid="2421" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="leftRed"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="6" gid="2422" x="16" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="rightRed"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="7" gid="2465" x="32" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="leftYellow"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="8" gid="2466" x="48" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="rightYellow"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="9" gid="2509" x="64" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="leftBlue"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="10" gid="2510" x="80" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="rightBlue"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="11" gid="2423" x="112" y="32" width="16" height="16">
+   <properties>
+    <property name="sprite" value="singleRed"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="12" gid="2467" x="128" y="32" width="16" height="16">
+   <properties>
+    <property name="sprite" value="singleYellow"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="13" gid="2511" x="144" y="32" width="16" height="16">
+   <properties>
+    <property name="sprite" value="singleBlue"/>
+    <property name="type" value="pill"/>
+   </properties>
+  </object>
+  <object id="14" gid="2424" x="112" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="redVirus"/>
+    <property name="type" value="virus"/>
+   </properties>
+  </object>
+  <object id="15" gid="2468" x="128" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="yellowVirus"/>
+    <property name="type" value="virus"/>
+   </properties>
+  </object>
+  <object id="16" gid="2512" x="144" y="16" width="16" height="16">
+   <properties>
+    <property name="sprite" value="blueVirus"/>
+    <property name="type" value="virus"/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>

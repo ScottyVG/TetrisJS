@@ -1,7 +1,7 @@
 { "height":20,
  "layers":[
         {
-         "data":[116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116, 116],
+         "data":[96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96],
          "height":20,
          "name":"backgroundLayer",
          "opacity":1,
@@ -12,7 +12,7 @@
          "y":0
         }, 
         {
-         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 989, 989, 989, 989, 0, 0, 990, 990, 990, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 0, 0, 0, 0, 0, 0, 0, 0, 990, 989, 989, 989, 989, 989, 990, 990, 990, 990, 990],
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 970, 970, 970, 970, 0, 0, 969, 969, 969, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 0, 0, 0, 0, 0, 0, 0, 0, 969, 970, 970, 970, 970, 970, 969, 969, 969, 969, 969],
          "height":20,
          "name":"blockedLayer",
          "opacity":1,
@@ -24,119 +24,21 @@
         }, 
         {
          "draworder":"topdown",
-         "height":0,
+         "height":20,
          "name":"objectsLayer",
          "objects":[
                 {
-                 "gid":8,
+                 "gid":2377,
                  "height":16,
-                 "id":9,
+                 "id":1,
                  "name":"",
                  "properties":
                     {
-                     "color":"er",
-                     "sprite":"redVirus",
-                     "type":"virus"
+                     "sprite":"greenLeft",
+                     "type":"playerStart"
                     },
                  "propertytypes":
                     {
-                     "color":"string",
-                     "sprite":"string",
-                     "type":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":112,
-                 "y":16
-                }, 
-                {
-                 "gid":12,
-                 "height":16,
-                 "id":10,
-                 "name":"",
-                 "properties":
-                    {
-                     "color":"ey",
-                     "sprite":"yellowVirus",
-                     "type":"virus"
-                    },
-                 "propertytypes":
-                    {
-                     "color":"string",
-                     "sprite":"string",
-                     "type":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":128,
-                 "y":16
-                }, 
-                {
-                 "gid":16,
-                 "height":16,
-                 "id":11,
-                 "name":"",
-                 "properties":
-                    {
-                     "color":"eb",
-                     "sprite":"blueVirus",
-                     "type":"virus"
-                    },
-                 "propertytypes":
-                    {
-                     "color":"string",
-                     "sprite":"string",
-                     "type":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":144,
-                 "y":16
-                }, 
-                {
-                 "gid":6,
-                 "height":16,
-                 "id":18,
-                 "name":"",
-                 "properties":
-                    {
-                     "color":"rr",
-                     "sprite":"rightRed",
-                     "type":"pill"
-                    },
-                 "propertytypes":
-                    {
-                     "color":"string",
-                     "sprite":"string",
-                     "type":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":80,
-                 "y":16
-                }, 
-                {
-                 "gid":5,
-                 "height":16,
-                 "id":19,
-                 "name":"",
-                 "properties":
-                    {
-                     "color":"lr",
-                     "sprite":"leftRed",
-                     "type":"pill"
-                    },
-                 "propertytypes":
-                    {
-                     "color":"string",
                      "sprite":"string",
                      "type":"string"
                     },
@@ -145,22 +47,20 @@
                  "visible":true,
                  "width":16,
                  "x":64,
-                 "y":16
+                 "y":48
                 }, 
                 {
-                 "gid":9,
+                 "gid":2378,
                  "height":16,
-                 "id":20,
+                 "id":2,
                  "name":"",
                  "properties":
                     {
-                     "color":"ly",
-                     "sprite":"leftYellow",
-                     "type":"pill"
+                     "sprite":"rightGreen",
+                     "type":"playerStart"
                     },
                  "propertytypes":
                     {
-                     "color":"string",
                      "sprite":"string",
                      "type":"string"
                     },
@@ -168,47 +68,21 @@
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":32,
-                 "y":16
+                 "x":80,
+                 "y":48
                 }, 
                 {
-                 "gid":10,
+                 "gid":2421,
                  "height":16,
-                 "id":21,
+                 "id":3,
                  "name":"",
                  "properties":
                     {
-                     "color":"ry",
-                     "sprite":"rightYellow",
+                     "sprite":"leftRed",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
-                     "color":"string",
-                     "sprite":"string",
-                     "type":"string"
-                    },
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":16,
-                 "x":48,
-                 "y":16
-                }, 
-                {
-                 "gid":13,
-                 "height":16,
-                 "id":22,
-                 "name":"",
-                 "properties":
-                    {
-                     "color":"lb",
-                     "sprite":"leftBlue",
-                     "type":"pill"
-                    },
-                 "propertytypes":
-                    {
-                     "color":"string",
                      "sprite":"string",
                      "type":"string"
                     },
@@ -220,19 +94,17 @@
                  "y":16
                 }, 
                 {
-                 "gid":14,
+                 "gid":2422,
                  "height":16,
-                 "id":23,
+                 "id":6,
                  "name":"",
                  "properties":
                     {
-                     "color":"rb",
-                     "sprite":"rightBlue",
+                     "sprite":"rightRed",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
-                     "color":"string",
                      "sprite":"string",
                      "type":"string"
                     },
@@ -244,19 +116,105 @@
                  "y":16
                 }, 
                 {
-                 "gid":7,
+                 "gid":2465,
                  "height":16,
-                 "id":24,
+                 "id":7,
                  "name":"",
                  "properties":
                     {
-                     "color":"br",
+                     "sprite":"leftYellow",
+                     "type":"pill"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":32,
+                 "y":16
+                }, 
+                {
+                 "gid":2466,
+                 "height":16,
+                 "id":8,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"rightYellow",
+                     "type":"pill"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":48,
+                 "y":16
+                }, 
+                {
+                 "gid":2509,
+                 "height":16,
+                 "id":9,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"leftBlue",
+                     "type":"pill"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":64,
+                 "y":16
+                }, 
+                {
+                 "gid":2510,
+                 "height":16,
+                 "id":10,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"rightBlue",
+                     "type":"pill"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":80,
+                 "y":16
+                }, 
+                {
+                 "gid":2423,
+                 "height":16,
+                 "id":11,
+                 "name":"",
+                 "properties":
+                    {
                      "sprite":"singleRed",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
-                     "color":"string",
                      "sprite":"string",
                      "type":"string"
                     },
@@ -268,19 +226,17 @@
                  "y":32
                 }, 
                 {
-                 "gid":11,
+                 "gid":2467,
                  "height":16,
-                 "id":25,
+                 "id":12,
                  "name":"",
                  "properties":
                     {
-                     "color":"by",
                      "sprite":"singleYellow",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
-                     "color":"string",
                      "sprite":"string",
                      "type":"string"
                     },
@@ -292,19 +248,17 @@
                  "y":32
                 }, 
                 {
-                 "gid":15,
+                 "gid":2511,
                  "height":16,
-                 "id":26,
+                 "id":13,
                  "name":"",
                  "properties":
                     {
-                     "color":"bb",
                      "sprite":"singleBlue",
                      "type":"pill"
                     },
                  "propertytypes":
                     {
-                     "color":"string",
                      "sprite":"string",
                      "type":"string"
                     },
@@ -316,79 +270,87 @@
                  "y":32
                 }, 
                 {
-                 "gid":1,
+                 "gid":2424,
                  "height":16,
-                 "id":32,
+                 "id":14,
                  "name":"",
                  "properties":
                     {
-                     "item":"playerStart",
-                     "sprite":"leftGreen"
+                     "sprite":"redVirus",
+                     "type":"virus"
                     },
                  "propertytypes":
                     {
-                     "item":"string",
-                     "sprite":"string"
+                     "sprite":"string",
+                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":64,
-                 "y":48
+                 "x":112,
+                 "y":16
                 }, 
                 {
-                 "gid":2,
+                 "gid":2468,
                  "height":16,
-                 "id":33,
+                 "id":15,
                  "name":"",
                  "properties":
                     {
-                     "item":"playerStart",
-                     "sprite":"rightGreen"
+                     "sprite":"yellowVirus",
+                     "type":"virus"
                     },
                  "propertytypes":
                     {
-                     "item":"string",
-                     "sprite":"string"
+                     "sprite":"string",
+                     "type":"string"
                     },
                  "rotation":0,
                  "type":"",
                  "visible":true,
                  "width":16,
-                 "x":80,
-                 "y":48
+                 "x":128,
+                 "y":16
+                }, 
+                {
+                 "gid":2512,
+                 "height":16,
+                 "id":16,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"blueVirus",
+                     "type":"virus"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string",
+                     "type":"string"
+                    },
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":16,
+                 "x":144,
+                 "y":16
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":0,
+         "width":10,
          "x":0,
          "y":0
         }],
- "nextobjectid":36,
+ "nextobjectid":18,
  "orientation":"orthogonal",
  "renderorder":"left-down",
  "tileheight":16,
  "tilesets":[
         {
-         "columns":4,
-         "firstgid":1,
-         "image":"tiles\/drMarioClone.png",
-         "imageheight":80,
-         "imagewidth":64,
-         "margin":0,
-         "name":"drMarioClone",
-         "spacing":0,
-         "tilecount":20,
-         "tileheight":16,
-         "tilewidth":16,
-         "transparentcolor":"#ff55ff"
-        }, 
-        {
          "columns":44,
-         "firstgid":21,
-         "image":"tiles\/tiles.png",
+         "firstgid":1,
+         "image":"tiles.png",
          "imageheight":1280,
          "imagewidth":705,
          "margin":0,
@@ -397,7 +359,7 @@
          "tilecount":3520,
          "tileheight":16,
          "tilewidth":16,
-         "transparentcolor":"#ffffff"
+         "transparentcolor":"#ff55ff"
         }],
  "tilewidth":16,
  "version":1,

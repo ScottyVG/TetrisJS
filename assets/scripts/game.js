@@ -8,7 +8,6 @@ drMarioGame.Game.prototype = {
     this.map = this.game.add.tilemap('drMarioLevel');
     //the first parameter is the tileset name as specified in Tiled, the second is the key to the asset
     this.map.addTilesetImage('tiles', 'gameTiles');
-    this.map.addTilesetImage('drMarioClone', 'gameSprites');
 
     //create layer
     this.backgroundlayer = this.map.createLayer('backgroundLayer');
@@ -29,7 +28,7 @@ drMarioGame.Game.prototype = {
     //create pill
     // TODO: have the game create a random pill color combo
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
-      // this.player = this.game.add.sprite(result[0].x, result[0].y, 'playerStart');
+    this.player = this.game.add.sprite(result[0].x, result[0].y, 'playerStart');
     this.player = this.game.add.sprite('playerStart');
     this.game.physics.arcade.enable(this.player);
 

@@ -5,7 +5,7 @@
  </tileset>
  <layer name="Tile Layer 1" width="1" height="1">
   <data encoding="csv">
-2
+16
 </data>
  </layer>
 </map>
