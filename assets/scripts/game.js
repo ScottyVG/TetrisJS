@@ -2,6 +2,7 @@ var drMarioGame = drMarioGame || {};
 
 //title screen
 drMarioGame.Game = function() {};
+console.log('Game state loaded');
 
 drMarioGame.Game.prototype = {
   create: function() {
@@ -22,15 +23,20 @@ drMarioGame.Game.prototype = {
     // TODO: FIGURE OUT WHERE THE CODE IS BREAKING!!!
     // TODO: CODE BREAKS BELOW THIS LINE
 
-    this.createVirus();
-    this.createPills();
+    // this.createVirus();
+    // this.createPills();
 
-    //create pill
+    //create new pill
     // TODO: have the game create a random pill color combo
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
-    this.player = this.game.add.sprite(result[0].x, result[0].y, 'playerStart');
-    this.player = this.game.add.sprite('playerStart');
+    this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');
+    // this.player = this.game.add.sprite('playerStart');
     this.game.physics.arcade.enable(this.player);
+
+    // var result = this.findObjectsByType('playerStartRight', this.map, 'objectsLayer')
+    // this.player = this.game.add.sprite(result[0].x, result[0].y, 'playerStartRight');
+    // this.player = this.game.add.sprite('playerStartRight');
+    // this.game.physics.arcade.enable(this.player);
 
 
     // move player with cursor keys
@@ -38,32 +44,33 @@ drMarioGame.Game.prototype = {
 
   },
 
-  createVirus: function() {
-    //   create virus's
-    this.virus = this.game.add.group();
-    this.virus.enableBody = true;
-    var item;
-    result = this.findObjectsByType('virus', this.map, 'objectsLayer');
-    result.forEach(function(element) {
-      this.createFromTiledObject(element, this.virus);
-    }, this);
-  },
-  createPills: function() {
-    // create pills
-    this.pills = this.game.add.group();
-    this.pills.enableBody = true;
-    result = this.findObjectsByType('pill', this.map, 'objectsLayer');
-
-    result.forEach(function(element) {
-      this.createFromTiledObject(element, this.pills);
-    }, this);
-  },
+  // createVirus: function() {
+  //   //   create virus's
+  //   this.virus = this.game.add.group();
+  //   this.virus.enableBody = true;
+  //   var item;
+  //   result = this.findObjectsByType('virus', this.map, 'objectsLayer');
+  //   result.forEach(function(element) {
+  //     this.createFromTiledObject(element, this.virus);
+  //   }, this);
+  // },
+  // createPills: function() {
+  //   // create pills
+  //   this.pills = this.game.add.group();
+  //   this.pills.enableBody = true;
+  //   result = this.findObjectsByType('pill', this.map, 'objectsLayer');
+  //
+  //   result.forEach(function(element) {
+  //     this.createFromTiledObject(element, this.pills);
+  //   }, this);
+  // },
 
   // find objects in a Tiled layer that containt a property called "type" equal to a certain value
   findObjectsByType: function(type, map, layer) {
     var result = new Array();
     map.objects[layer].forEach(function(element) {
-      if (element.properties.type === type) {
+      console.log('fuck tiled', map.objects[layer]);
+      if (element.type === type) {
         // Phaser uses top left, Tiled bottom left so we have to adjust
         // also keep in mind that the cup images are a bit smaller than the tile which is 16x16
         // so they might not be placed in the exact position as in Tiled
@@ -86,24 +93,39 @@ drMarioGame.Game.prototype = {
   update: function() {
     //collision
     // this.game.physics.arcade.collide(this.player, this.blockedLayer, this.pills, this.virus);
+    this.game.physics.arcade.collide(this.player, this.blockedLayer);
     // this.game.physics.arcade.overlap(this.player, null, this);
 
     //player movement
     this.player.body.velocity.x = 0;
+    this.player.body.velocity.y = 12;
 
-    if (this.cursors.up.isDown) {
-      if (this.player.body.velocity.y == 0)
-        this.player.body.velocity.y -= 50;
-    } else if (this.cursors.down.isDown) {
-      if (this.player.body.velocity.y == 0)
-        this.player.body.velocity.y += 50;
-    } else {
-      this.player.body.velocity.y = 0;
-    }
-    if (this.cursors.left.isDown) {
-      this.player.body.velocity.x -= 50;
+    // if (this.cursors.up.isDown) {
+    //   if (this.player.body.velocity.y == 0)
+    //     this.player.body.velocity.y -= 50;
+    // } else if (this.cursors.down.isDown) {
+    //   if (this.player.body.velocity.y == 0)
+    //     this.player.body.velocity.y += 50;
+    // } else {
+    //   this.player.body.velocity.y = 0;
+    // }
+    // if (this.cursors.left.isDown) {
+    //   this.player.body.velocity.x -= 50;
+    // } else if (this.cursors.right.isDown) {
+    //   this.player.body.velocity.x += 50;
+    // }
+    if (this.cursors.down.isDown) {
+      this.player.body.velocity.y += 100;
+      console.log('down');
+    } else if (this.cursors.left.isDown) {
+      this.player.body.velocity.x -= 100;
+      console.log('left');
     } else if (this.cursors.right.isDown) {
-      this.player.body.velocity.x += 50;
+      this.player.body.velocity.x += 100;
+      console.log('right');
+      // } else if (this.cursors.up.isDown) {
+      //   this.player.body.velocity.y -= 100;
+      //   console.log('up');
     }
-  },
+  }
 };

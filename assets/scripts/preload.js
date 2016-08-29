@@ -20,7 +20,7 @@ drMarioGame.Preload.prototype = {
     this.load.image('singleRed', 'assets/img/singleRed.png');
     this.load.image('singleBlue', 'assets/img/singleBlue.png');
     this.load.image('singleYellow', 'assets/img/singleYellow.png');
-    this.load.image('leftGreen', 'assets/img/leftGreen.png');
+    this.load.image('player', 'assets/img/leftGreen.png');
     this.load.image('leftRed', 'assets/img/leftRed.png');
     this.load.image('leftBlue', 'assets/img/leftBlue.png');
     this.load.image('leftYellow', 'assets/img/leftYellow.png');
@@ -29,7 +29,7 @@ drMarioGame.Preload.prototype = {
     this.load.image('rightBlue', 'assets/img/rightBlue.png');
     this.load.image('rightYellow', 'assets/img/rightYellow.png');
 
-
+    console.log('Game Preloaded');
   },
   create: function() {
     this.state.start('Game');

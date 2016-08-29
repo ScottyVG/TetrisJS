@@ -55,13 +55,13 @@
   <object id="1" gid="2377" x="64" y="48" width="16" height="16">
    <properties>
     <property name="sprite" value="leftGreen"/>
-    <property name="type" value="playerStart"/>
+    <property name="type" value="playerStartLeft"/>
    </properties>
   </object>
   <object id="2" gid="2378" x="80" y="48" width="16" height="16">
    <properties>
     <property name="sprite" value="rightGreen"/>
-    <property name="type" value="playerStart"/>
+    <property name="type" value="playerStartRight"/>
    </properties>
   </object>
   <object id="3" gid="2421" x="0" y="16" width="16" height="16">

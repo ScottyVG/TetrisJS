@@ -23,7 +23,7 @@ drMarioGame.Boot.prototype = {
 
     //physics system
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
-
+    console.log('Game Booted');
     this.state.start('Preload');
   }
 };
