@@ -34,8 +34,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"red",
-                     "type":"enemy"
+                     "color":"er",
+                     "type":"virus"
                     },
                  "propertytypes":
                     {
@@ -56,8 +56,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"yellow",
-                     "type":"enemy"
+                     "color":"ey",
+                     "type":"virus"
                     },
                  "propertytypes":
                     {
@@ -78,8 +78,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"blue",
-                     "type":"enemy"
+                     "color":"eb",
+                     "type":"virus"
                     },
                  "propertytypes":
                     {
@@ -100,8 +100,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"red",
-                     "type":"rr"
+                     "color":"rr",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {
@@ -122,8 +122,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"red",
-                     "type":"lr"
+                     "color":"lr",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {
@@ -144,8 +144,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"yellow",
-                     "type":"ly"
+                     "color":"ly",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {
@@ -166,8 +166,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"yellow",
-                     "type":"ry"
+                     "color":"ry",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {
@@ -188,8 +188,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"blue",
-                     "type":"lb"
+                     "color":"lb",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {
@@ -210,8 +210,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"blue",
-                     "type":"rb"
+                     "color":"rb",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {
@@ -232,8 +232,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"red",
-                     "type":"br"
+                     "color":"br",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {
@@ -254,8 +254,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"yellow",
-                     "type":"by"
+                     "color":"by",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {
@@ -276,8 +276,8 @@
                  "name":"",
                  "properties":
                     {
-                     "color":"blue",
-                     "type":"bb"
+                     "color":"bb",
+                     "type":"pill"
                     },
                  "propertytypes":
                     {

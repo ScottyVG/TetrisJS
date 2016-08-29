@@ -57,74 +57,74 @@
  <objectgroup name="objectsLayer">
   <object id="9" gid="8" x="112" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="red"/>
-    <property name="type" value="enemy"/>
+    <property name="color" value="er"/>
+    <property name="type" value="virus"/>
    </properties>
   </object>
   <object id="10" gid="12" x="128" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="yellow"/>
-    <property name="type" value="enemy"/>
+    <property name="color" value="ey"/>
+    <property name="type" value="virus"/>
    </properties>
   </object>
   <object id="11" gid="16" x="144" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="blue"/>
-    <property name="type" value="enemy"/>
+    <property name="color" value="eb"/>
+    <property name="type" value="virus"/>
    </properties>
   </object>
   <object id="18" gid="6" x="80" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="red"/>
-    <property name="type" value="rr"/>
+    <property name="color" value="rr"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="19" gid="5" x="64" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="red"/>
-    <property name="type" value="lr"/>
+    <property name="color" value="lr"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="20" gid="9" x="32" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="yellow"/>
-    <property name="type" value="ly"/>
+    <property name="color" value="ly"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="21" gid="10" x="48" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="yellow"/>
-    <property name="type" value="ry"/>
+    <property name="color" value="ry"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="22" gid="13" x="0" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="blue"/>
-    <property name="type" value="lb"/>
+    <property name="color" value="lb"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="23" gid="14" x="16" y="16" width="16" height="16">
    <properties>
-    <property name="color" value="blue"/>
-    <property name="type" value="rb"/>
+    <property name="color" value="rb"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="24" gid="7" x="112" y="32" width="16" height="16">
    <properties>
-    <property name="color" value="red"/>
-    <property name="type" value="br"/>
+    <property name="color" value="br"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="25" gid="11" x="128" y="32" width="16" height="16">
    <properties>
-    <property name="color" value="yellow"/>
-    <property name="type" value="by"/>
+    <property name="color" value="by"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="26" gid="15" x="144" y="32" width="16" height="16">
    <properties>
-    <property name="color" value="blue"/>
-    <property name="type" value="bb"/>
+    <property name="color" value="bb"/>
+    <property name="type" value="pill"/>
    </properties>
   </object>
   <object id="32" gid="1" x="64" y="48" width="16" height="16">
