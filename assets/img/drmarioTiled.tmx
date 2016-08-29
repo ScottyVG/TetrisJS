@@ -1,88 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="left-down" width="10" height="20" tilewidth="16" tileheight="16" nextobjectid="13">
- <tileset firstgid="1" name="drMarioClone" tilewidth="16" tileheight="16" tilecount="35" columns="7">
-  <image source="tiles/drMarioClone.png" trans="ff55ff" width="120" height="80"/>
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="10" height="20" tilewidth="16" tileheight="16" nextobjectid="36">
+ <tileset firstgid="1" name="drMarioClone" tilewidth="16" tileheight="16" tilecount="20" columns="4">
+  <image source="tiles/drMarioClone.png" trans="ff55ff" width="64" height="80"/>
  </tileset>
- <tileset firstgid="36" name="tiles" tilewidth="16" tileheight="16" tilecount="3520" columns="44">
+ <tileset firstgid="21" name="tiles" tilewidth="16" tileheight="16" tilecount="3520" columns="44">
   <image source="tiles/tiles.png" trans="ffffff" width="705" height="1280"/>
  </tileset>
  <layer name="backgroundLayer" width="10" height="20">
   <data encoding="csv">
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131,
-131,131,131,131,131,131,131,131,131,131
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116,
+116,116,116,116,116,116,116,116,116,116
 </data>
  </layer>
  <layer name="blockedLayer" width="10" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
-1004,1004,1004,1004,0,0,1005,1005,1005,1005,
-1004,0,0,0,0,0,0,0,0,1005,
-1004,0,0,0,0,0,0,0,0,1005,
-1004,0,0,0,0,0,0,0,0,1005,
-1004,0,0,0,0,0,0,0,0,1005,
-1004,0,0,0,0,0,0,0,0,1005,
-1004,0,0,0,0,0,0,0,0,1005,
-1004,0,0,0,0,0,0,0,0,1005,
-1004,0,0,0,131,0,0,0,0,1005,
-1004,0,0,0,131,0,0,0,0,1005,
-1004,0,0,0,131,0,0,0,0,1005,
-1004,0,0,0,131,131,0,0,0,1005,
-1004,0,0,0,0,131,131,0,0,1005,
-1004,0,0,0,0,131,0,0,0,1005,
-1004,0,0,0,0,131,0,0,0,1005,
-1004,0,0,0,131,131,0,0,0,1005,
-1004,0,0,0,0,0,0,0,0,1005,
-1004,1004,1004,1004,1004,1005,1005,1005,1005,1005
+989,989,989,989,0,0,990,990,990,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,0,0,0,116,0,0,0,0,990,
+989,0,0,0,116,0,0,0,0,990,
+989,0,0,0,116,0,0,0,0,990,
+989,0,0,0,116,116,0,0,0,990,
+989,0,0,0,0,116,116,0,0,990,
+989,0,0,0,0,116,0,0,0,990,
+989,0,0,0,0,116,0,0,0,990,
+989,0,0,0,116,116,0,0,0,990,
+989,0,0,0,0,0,0,0,0,990,
+989,989,989,989,989,990,990,990,990,990
 </data>
  </layer>
  <objectgroup name="objectsLayer">
-  <object id="7" gid="8" x="64" y="16" width="16" height="16">
+  <object id="9" gid="8" x="112" y="16" width="16" height="16">
    <properties>
-    <property name="type" value="rbPill"/>
-   </properties>
-  </object>
-  <object id="8" gid="23" x="80" y="16" width="16" height="16">
-   <properties>
-    <property name="type" value="rbPill"/>
-   </properties>
-  </object>
-  <object id="9" gid="11" x="112" y="16" width="16" height="16">
-   <properties>
+    <property name="color" value="red"/>
     <property name="type" value="enemy"/>
    </properties>
   </object>
-  <object id="10" gid="18" x="128" y="16" width="16" height="16">
+  <object id="10" gid="12" x="128" y="16" width="16" height="16">
    <properties>
+    <property name="color" value="yellow"/>
     <property name="type" value="enemy"/>
    </properties>
   </object>
-  <object id="11" gid="25" x="144" y="16" width="16" height="16">
+  <object id="11" gid="16" x="144" y="16" width="16" height="16">
    <properties>
+    <property name="color" value="blue"/>
     <property name="type" value="enemy"/>
    </properties>
   </object>
-  <object id="12" gid="32" x="96" y="16" width="16" height="16">
+  <object id="18" gid="6" x="80" y="16" width="16" height="16">
    <properties>
-    <property name="type" value="enemy"/>
+    <property name="color" value="red"/>
+    <property name="type" value="rr"/>
+   </properties>
+  </object>
+  <object id="19" gid="5" x="64" y="16" width="16" height="16">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="type" value="lr"/>
+   </properties>
+  </object>
+  <object id="20" gid="9" x="32" y="16" width="16" height="16">
+   <properties>
+    <property name="color" value="yellow"/>
+    <property name="type" value="ly"/>
+   </properties>
+  </object>
+  <object id="21" gid="10" x="48" y="16" width="16" height="16">
+   <properties>
+    <property name="color" value="yellow"/>
+    <property name="type" value="ry"/>
+   </properties>
+  </object>
+  <object id="22" gid="13" x="0" y="16" width="16" height="16">
+   <properties>
+    <property name="color" value="blue"/>
+    <property name="type" value="lb"/>
+   </properties>
+  </object>
+  <object id="23" gid="14" x="16" y="16" width="16" height="16">
+   <properties>
+    <property name="color" value="blue"/>
+    <property name="type" value="rb"/>
+   </properties>
+  </object>
+  <object id="24" gid="7" x="112" y="32" width="16" height="16">
+   <properties>
+    <property name="color" value="red"/>
+    <property name="type" value="br"/>
+   </properties>
+  </object>
+  <object id="25" gid="11" x="128" y="32" width="16" height="16">
+   <properties>
+    <property name="color" value="yellow"/>
+    <property name="type" value="by"/>
+   </properties>
+  </object>
+  <object id="26" gid="15" x="144" y="32" width="16" height="16">
+   <properties>
+    <property name="color" value="blue"/>
+    <property name="type" value="bb"/>
+   </properties>
+  </object>
+  <object id="32" gid="1" x="64" y="48" width="16" height="16">
+   <properties>
+    <property name="item" value="playerStart"/>
+   </properties>
+  </object>
+  <object id="33" gid="2" x="80" y="48" width="16" height="16">
+   <properties>
+    <property name="item" value="playerStart"/>
    </properties>
   </object>
  </objectgroup>

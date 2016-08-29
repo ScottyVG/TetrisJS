@@ -12,9 +12,10 @@ drMarioGame.Preload.prototype = {
     this.load.setPreloadSprite(this.preloadBar);
 
     //load game assets
-    this.load.tilemap('drmarioTiled', 'assets/tilemaps/drmarioTiled.json', null, Phaser.Tilemap.TILED_JSON);
+    this.load.tilemap('drMarioLevel', 'assets/img/drMarioLevel.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.image('gameTiles', 'assets/img/tiles/tiles.png');
-    this.load.image('gameTiles', 'assets/img/tiles/drMarioClone.png');
+    this.load.image('gameSprites', 'assets/img/tiles/drMarioClone.png');
+    // TODO: possibly need to load individual sprite images
     // this.load.image('greencup', 'assets/images/greencup.png');
     // this.load.image('bluecup', 'assets/images/bluecup.png');
     // this.load.image('player', 'assets/images/player.png');
