@@ -34,7 +34,7 @@
                  "name":"",
                  "properties":
                     {
-                     "sprite":"greenLeft",
+                     "sprite":"leftGreen",
                      "type":"playerStart"
                     },
                  "propertytypes":

@@ -85,8 +85,8 @@ drMarioGame.Game.prototype = {
 
   update: function() {
     //collision
-    this.game.physics.arcade.collide(this.player, this.blockedLayer);
-    this.game.physics.arcade.overlap(this.player, this.items, this.collect, null, this);
+    // this.game.physics.arcade.collide(this.player, this.blockedLayer, this.pills, this.virus);
+    // this.game.physics.arcade.overlap(this.player, null, this);
 
     //player movement
     this.player.body.velocity.x = 0;
