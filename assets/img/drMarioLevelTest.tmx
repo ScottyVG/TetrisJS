@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="left-down" width="10" height="20" tilewidth="16" tileheight="16" nextobjectid="22">
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="10" height="20" tilewidth="16" tileheight="16" nextobjectid="28">
  <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="3520" columns="44">
   <image source="tiles.png" trans="ff55ff" width="705" height="1280"/>
  </tileset>
@@ -51,6 +51,23 @@
 970,970,970,970,970,969,969,969,969,969
 </data>
  </layer>
+ <objectgroup name="virusLayer">
+  <object id="25" type="virus" gid="2424" x="128" y="192" width="16" height="16">
+   <properties>
+    <property name="sprite" value="redVirus"/>
+   </properties>
+  </object>
+  <object id="26" type="virus" gid="2468" x="48" y="144" width="16" height="16">
+   <properties>
+    <property name="sprite" value="yellowVirus"/>
+   </properties>
+  </object>
+  <object id="27" type="virus" gid="2512" x="80" y="304" width="16" height="16">
+   <properties>
+    <property name="sprite" value="blueVirus"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup name="objectsLayer">
   <object id="19" gid="1" x="64" y="48" width="16" height="16"/>
   <object id="21" type="playerStart" gid="1" x="64" y="48" width="16" height="16"/>

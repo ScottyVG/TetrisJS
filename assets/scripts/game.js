@@ -4,6 +4,9 @@ var drMarioGame = drMarioGame || {};
 drMarioGame.Game = function() {};
 console.log('Game state loaded');
 
+// counter to prevent excessive movements when key press or multiple key downs
+var currentMovementTimer = 0;
+
 drMarioGame.Game.prototype = {
   create: function() {
     this.map = this.game.add.tilemap('drMarioLevel');
@@ -11,33 +14,27 @@ drMarioGame.Game.prototype = {
     this.map.addTilesetImage('tiles', 'gameTiles');
 
     //create layer
-    this.backgroundlayer = this.map.createLayer('backgroundLayer');
+    this.backgroundLayer = this.map.createLayer('backgroundLayer');
     this.blockedLayer = this.map.createLayer('blockedLayer');
+    // this.virusLayer = this.map.createLayer('virusLayer');
+
 
     //collision on blockedLayer
     this.map.setCollisionBetween(1, 2000, true, 'blockedLayer');
+    // this.map.setCollisionBetween(1, 2000, true, 'virusLayer');
 
     //resizes the game world to match the layer dimensions
-    this.backgroundlayer.resizeWorld();
-
-    // TODO: FIGURE OUT WHERE THE CODE IS BREAKING!!!
-    // TODO: CODE BREAKS BELOW THIS LINE
+    this.backgroundLayer.resizeWorld();
 
     // this.createVirus();
     // this.createPills();
 
-    //create new pill
+    //Pill spawning location
     // TODO: have the game create a random pill color combo
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
     this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');
     // this.player = this.game.add.sprite('playerStart');
     this.game.physics.arcade.enable(this.player);
-
-    // var result = this.findObjectsByType('playerStartRight', this.map, 'objectsLayer')
-    // this.player = this.game.add.sprite(result[0].x, result[0].y, 'playerStartRight');
-    // this.player = this.game.add.sprite('playerStartRight');
-    // this.game.physics.arcade.enable(this.player);
-
 
     // move player with cursor keys
     this.cursors = this.game.input.keyboard.createCursorKeys();
@@ -48,8 +45,8 @@ drMarioGame.Game.prototype = {
   //   //   create virus's
   //   this.virus = this.game.add.group();
   //   this.virus.enableBody = true;
-  //   var item;
-  //   result = this.findObjectsByType('virus', this.map, 'objectsLayer');
+  //   var virus;
+  //   result = this.findObjectsByType('virus', this.map, 'blockedLayer');
   //   result.forEach(function(element) {
   //     this.createFromTiledObject(element, this.virus);
   //   }, this);
@@ -96,24 +93,44 @@ drMarioGame.Game.prototype = {
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
     // this.game.physics.arcade.overlap(this.player, null, this);
 
+    // currentMovementTimer += this.time.elapsed;
+    // if (currentMovementTimer > movementLag) { // Prevent too rapid firing
+    //   if (pause.isDown) {
+    //     managePauseScreen();
+    //   }
+    //   if (cursors.left.isDown) {
+    //     if (canMove(slide, "left")) {
+    //       move(slide, slideCenter, "left", 1);
+    //     }
+    //   } else if (cursors.right.isDown) {
+    //     if (canMove(slide, "right")) {
+    //       move(slide, slideCenter, "right", 1);
+    //     }
+    //   } else if (cursors.down.isDown) {
+    //     if (canMove(slide, "down")) {
+    //       move(slide, slideCenter, "down", 1);
+    //     }
+    //   } else if (rotates.clockwise.isDown) {
+    //     if (canMove(rotate, "clockwise")) {
+    //       move(rotate, null, "clockwise", 1);
+    //     } else {
+    //       //console.log('Cannot rotate');
+    //     }
+    //   } else if (rotates.counterClockwise.isDown) {
+    //     if (canMove(rotate, "counterclockwise")) {
+    //       move(rotate, null, "counterclockwise", 1);
+    //     } else {
+    //       //console.log('Cannot rotate');
+    //     }
+    //   }
+    //   currentMovementTimer = 0;
+    // }
+
     //player movement
     this.player.body.velocity.x = 0;
     this.player.body.velocity.y = 12;
 
-    // if (this.cursors.up.isDown) {
-    //   if (this.player.body.velocity.y == 0)
-    //     this.player.body.velocity.y -= 50;
-    // } else if (this.cursors.down.isDown) {
-    //   if (this.player.body.velocity.y == 0)
-    //     this.player.body.velocity.y += 50;
-    // } else {
-    //   this.player.body.velocity.y = 0;
-    // }
-    // if (this.cursors.left.isDown) {
-    //   this.player.body.velocity.x -= 50;
-    // } else if (this.cursors.right.isDown) {
-    //   this.player.body.velocity.x += 50;
-    // }
+
     if (this.cursors.down.isDown) {
       this.player.body.velocity.y += 100;
       console.log('down');
@@ -123,9 +140,10 @@ drMarioGame.Game.prototype = {
     } else if (this.cursors.right.isDown) {
       this.player.body.velocity.x += 100;
       console.log('right');
-      // } else if (this.cursors.up.isDown) {
-      //   this.player.body.velocity.y -= 100;
-      //   console.log('up');
+    } else if (this.cursors.up.isDown) {
+      this.player.body.velocity.y -= 100;
+      console.log('up');
     }
   }
 };
+// CHEERS!!! 🍻
