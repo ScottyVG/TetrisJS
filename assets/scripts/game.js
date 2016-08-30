@@ -23,25 +23,8 @@ drMarioGame.Game.prototype = {
     //resizes the game world to match the layer dimensions
     this.backgroundLayer.resizeWorld();
 
-    //single pills
-    // this.game.add.sprite(16, 16, 'singleRed');
-    // this.game.add.sprite(0, 0, 'singleBlue');
-    // this.game.add.sprite(0, 0, 'singleYellow');
-    //
-    // //left half of pills
-    // this.game.add.sprite(0, 0, 'leftGreen');
-    // this.game.add.sprite(0, 0, 'leftRed');
-    // this.game.add.sprite(0, 0, 'leftBlue');
-    // this.game.add.sprite(0, 0, 'leftYellow');
-    //
-    // //right half of pills
-    // this.game.add.sprite(0, 0, 'rightGreen');
-    // this.game.add.sprite(0, 0, 'rightRed');
-    // this.game.add.sprite(0, 0, 'rightBlue');
-    // this.game.add.sprite(0, 0, 'rightYellow');
 
     //Make Pill combo
-
     this.createVirus();
     // this.createPills();
 
@@ -88,23 +71,9 @@ drMarioGame.Game.prototype = {
 
   },
 
-  // Hoisted Functions for Create & Update
-  createVirus: function() {
-    //create virus
-    this.virus = this.game.add.group();
-    this.virus.enableBody = true;
-    // var item;
-    result = this.findObjectsByType('virus', this.map, 'virusLayer');
-    result.forEach(function(element) {
-      this.createFromTiledObject(element, this.virus);
-    }, this);
-  },
-
-  // createNewPill: function() {
-  //   this.pill = this.game.add.group();
-  //   this.pill.enableBody = true;
-  //   var
-  // }
+  //======================================//
+  // Hoisted Functions for Create & Update//
+  //======================================//
 
   // find objects in a Tiled layer that containt a property called "type" equal to a certain value
   findObjectsByType: function(type, map, layer) {
@@ -128,8 +97,59 @@ drMarioGame.Game.prototype = {
     Object.keys(element.properties).forEach(function(key) {
       sprite[key] = element.properties[key];
     });
+  },
+
+  createVirus: function() {
+    //create virus
+    this.virus = this.game.add.group();
+    this.virus.enableBody = true;
+    // var item;
+    result = this.findObjectsByType('virus', this.map, 'virusLayer');
+    result.forEach(function(element) {
+      this.createFromTiledObject(element, this.virus);
+    }, this);
   }
 
+  // createPill: function() {
+  // var pillColorLeft = Math.floor(Math.random() * 3);
+  // var pillColorRight = Math.floor(Math.random() * 3);
+
+  //   var pill = {
+  //     if (pillColorLeft === 1) {
+  //
+  //     }
+  //     thePlayer: true,
+  //     stopped: false,
+  //     pillRotation: 0,
+  //     pos1Index: startPill,
+  //     position: virusPositions[startPill],
+  //     pillColor1: pieceColors[pillColor1],
+  //
+  //     pos2Index: startPill + 1,
+  //     position2: virusPositions[startPill + 1],
+  //     pillColor2: pieceColors[pillColor2]
+  //   }
+  //
+  //   return pill;
+  //
+  // }
 };
 
 // CHEERS!!! 🍻
+
+//single pills
+// this.game.add.sprite(16, 16, 'singleRed');
+// this.game.add.sprite(0, 0, 'singleBlue');
+// this.game.add.sprite(0, 0, 'singleYellow');
+//
+// //left half of pills
+// this.game.add.sprite(0, 0, 'leftGreen');
+// this.game.add.sprite(0, 0, 'leftRed');
+// this.game.add.sprite(0, 0, 'leftBlue');
+// this.game.add.sprite(0, 0, 'leftYellow');
+//
+// //right half of pills
+// this.game.add.sprite(0, 0, 'rightGreen');
+// this.game.add.sprite(0, 0, 'rightRed');
+// this.game.add.sprite(0, 0, 'rightBlue');
+// this.game.add.sprite(0, 0, 'rightYellow');

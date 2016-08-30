@@ -12,7 +12,7 @@ drMarioGame.Preload.prototype = {
     this.load.setPreloadSprite(this.preloadBar);
 
     //load game assets
-    this.load.tilemap('drMarioLevel', 'assets/img/drMarioLevel.json', null, Phaser.Tilemap.TILED_JSON);
+    this.load.tilemap('drMarioLevel', 'assets/json/drMarioLevel.json', null, Phaser.Tilemap.TILED_JSON);
     this.load.image('gameTiles', 'assets/img/tiles.png');
     //virus
     this.load.image('redVirus', 'assets/img/redVirus.png');
