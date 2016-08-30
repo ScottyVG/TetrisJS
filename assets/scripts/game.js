@@ -4,9 +4,6 @@ var drMarioGame = drMarioGame || {};
 drMarioGame.Game = function() {};
 console.log('Game state loaded');
 
-// counter to prevent excessive movements when key press or multiple key downs
-var currentMovementTimer = 0;
-
 drMarioGame.Game.prototype = {
   create: function() {
     this.map = this.game.add.tilemap('drMarioLevel');
@@ -16,6 +13,7 @@ drMarioGame.Game.prototype = {
     //create layer
     this.backgroundLayer = this.map.createLayer('backgroundLayer');
     this.blockedLayer = this.map.createLayer('blockedLayer');
+    this.virusLayer = this.map.createLayer('virusLayer');
     // this.virusLayer = this.map.createLayer('virusLayer');
 
 
@@ -26,51 +24,49 @@ drMarioGame.Game.prototype = {
     //resizes the game world to match the layer dimensions
     this.backgroundLayer.resizeWorld();
 
-    // this.createVirus();
+    this.createVirus();
     // this.createPills();
+
+    //Make Pill combo
+    var playerSprite = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
+
 
     //Pill spawning location
     // TODO: have the game create a random pill color combo
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
-    this.player = this.game.add.sprite(result[0].x, result[0].y, 'player');
-    // this.player = this.game.add.sprite('playerStart');
+    this.player = this.game.add.sprite(result[0].x, result[0].y, 'leftGreen');
     this.game.physics.arcade.enable(this.player);
+
+    //Virus spawning
+    // var result = this.findObjectsByType('virus', this.map, 'virusLayer')
+    // this.player = this.game.add.sprite(result[0].x, result[0].y, 'redVirus');
+    // this.game.physics.arcade.enable(this.player);
 
     // move player with cursor keys
     this.cursors = this.game.input.keyboard.createCursorKeys();
 
   },
+  createVirus: function() {
+    //create virus
+    this.virus = this.game.add.group();
+    this.virus.enableBody = true;
+    var item;
+    result = this.findObjectsByType('virus', this.map, 'virusLayer');
+    result.forEach(function(element) {
+      this.createFromTiledObject(element, this.virus);
+    }, this);
+  },
 
-  // createVirus: function() {
-  //   //   create virus's
-  //   this.virus = this.game.add.group();
-  //   this.virus.enableBody = true;
-  //   var virus;
-  //   result = this.findObjectsByType('virus', this.map, 'blockedLayer');
-  //   result.forEach(function(element) {
-  //     this.createFromTiledObject(element, this.virus);
-  //   }, this);
-  // },
-  // createPills: function() {
-  //   // create pills
-  //   this.pills = this.game.add.group();
-  //   this.pills.enableBody = true;
-  //   result = this.findObjectsByType('pill', this.map, 'objectsLayer');
-  //
-  //   result.forEach(function(element) {
-  //     this.createFromTiledObject(element, this.pills);
-  //   }, this);
-  // },
+
+
 
   // find objects in a Tiled layer that containt a property called "type" equal to a certain value
   findObjectsByType: function(type, map, layer) {
     var result = new Array();
     map.objects[layer].forEach(function(element) {
-      console.log('fuck tiled', map.objects[layer]);
+      console.log('Whats in my object, Bro?', map.objects[layer]);
       if (element.type === type) {
         // Phaser uses top left, Tiled bottom left so we have to adjust
-        // also keep in mind that the cup images are a bit smaller than the tile which is 16x16
-        // so they might not be placed in the exact position as in Tiled
         element.y -= map.tileHeight;
         result.push(element);
       }
@@ -89,42 +85,8 @@ drMarioGame.Game.prototype = {
 
   update: function() {
     //collision
-    // this.game.physics.arcade.collide(this.player, this.blockedLayer, this.pills, this.virus);
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
-    // this.game.physics.arcade.overlap(this.player, null, this);
-
-    // currentMovementTimer += this.time.elapsed;
-    // if (currentMovementTimer > movementLag) { // Prevent too rapid firing
-    //   if (pause.isDown) {
-    //     managePauseScreen();
-    //   }
-    //   if (cursors.left.isDown) {
-    //     if (canMove(slide, "left")) {
-    //       move(slide, slideCenter, "left", 1);
-    //     }
-    //   } else if (cursors.right.isDown) {
-    //     if (canMove(slide, "right")) {
-    //       move(slide, slideCenter, "right", 1);
-    //     }
-    //   } else if (cursors.down.isDown) {
-    //     if (canMove(slide, "down")) {
-    //       move(slide, slideCenter, "down", 1);
-    //     }
-    //   } else if (rotates.clockwise.isDown) {
-    //     if (canMove(rotate, "clockwise")) {
-    //       move(rotate, null, "clockwise", 1);
-    //     } else {
-    //       //console.log('Cannot rotate');
-    //     }
-    //   } else if (rotates.counterClockwise.isDown) {
-    //     if (canMove(rotate, "counterclockwise")) {
-    //       move(rotate, null, "counterclockwise", 1);
-    //     } else {
-    //       //console.log('Cannot rotate');
-    //     }
-    //   }
-    //   currentMovementTimer = 0;
-    // }
+    this.game.physics.arcade.collide(this.player, this.virus);
 
     //player movement
     this.player.body.velocity.x = 0;
@@ -140,9 +102,6 @@ drMarioGame.Game.prototype = {
     } else if (this.cursors.right.isDown) {
       this.player.body.velocity.x += 100;
       console.log('right');
-    } else if (this.cursors.up.isDown) {
-      this.player.body.velocity.y -= 100;
-      console.log('up');
     }
   }
 };

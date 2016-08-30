@@ -23,6 +23,100 @@
          "y":0
         }, 
         {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":20,
+         "name":"virusgenLayer",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 96, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":20,
+         "name":"gameoverLayer",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":true,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "height":0,
+         "name":"virusLayer",
+         "objects":[
+                {
+                 "gid":2424,
+                 "height":16,
+                 "id":25,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"redVirus"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string"
+                    },
+                 "rotation":0,
+                 "type":"virus",
+                 "visible":true,
+                 "width":16,
+                 "x":128,
+                 "y":192
+                }, 
+                {
+                 "gid":2468,
+                 "height":16,
+                 "id":26,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"yellowVirus"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string"
+                    },
+                 "rotation":0,
+                 "type":"virus",
+                 "visible":true,
+                 "width":16,
+                 "x":48,
+                 "y":144
+                }, 
+                {
+                 "gid":2512,
+                 "height":16,
+                 "id":27,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"blueVirus"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string"
+                    },
+                 "rotation":0,
+                 "type":"virus",
+                 "visible":true,
+                 "width":16,
+                 "x":80,
+                 "y":304
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "width":0,
+         "x":0,
+         "y":0
+        }, 
+        {
          "draworder":"topdown",
          "height":0,
          "name":"objectsLayer",
@@ -47,69 +141,9 @@
                  "rotation":0,
                  "type":"playerStart",
                  "visible":true,
-                 "width":16,
+                 "width":32,
                  "x":64,
                  "y":48
-                }, 
-                {
-                 "gid":2424,
-                 "height":16,
-                 "id":22,
-                 "name":"",
-                 "properties":
-                    {
-                     "sprite":"redVirus"
-                    },
-                 "propertytypes":
-                    {
-                     "sprite":"string"
-                    },
-                 "rotation":0,
-                 "type":"virus",
-                 "visible":true,
-                 "width":16,
-                 "x":48,
-                 "y":224
-                }, 
-                {
-                 "gid":2468,
-                 "height":16,
-                 "id":23,
-                 "name":"",
-                 "properties":
-                    {
-                     "sprite":"yellowVirus"
-                    },
-                 "propertytypes":
-                    {
-                     "sprite":"string"
-                    },
-                 "rotation":0,
-                 "type":"virus",
-                 "visible":true,
-                 "width":16,
-                 "x":96,
-                 "y":192
-                }, 
-                {
-                 "gid":2512,
-                 "height":16,
-                 "id":24,
-                 "name":"",
-                 "properties":
-                    {
-                     "sprite":"blueVirus"
-                    },
-                 "propertytypes":
-                    {
-                     "sprite":"string"
-                    },
-                 "rotation":0,
-                 "type":"virus",
-                 "visible":true,
-                 "width":16,
-                 "x":128,
-                 "y":304
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -118,7 +152,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":25,
+ "nextobjectid":28,
  "orientation":"orthogonal",
  "renderorder":"left-down",
  "tileheight":16,

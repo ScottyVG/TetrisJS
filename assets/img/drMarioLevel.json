@@ -23,8 +23,30 @@
          "y":0
         }, 
         {
-         "draworder":"topdown",
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 96, 96, 96, 96, 96, 96, 96, 96, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
          "height":20,
+         "name":"virusgenLayer",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "data":[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 96, 96, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+         "height":20,
+         "name":"gameoverLayer",
+         "opacity":1,
+         "type":"tilelayer",
+         "visible":false,
+         "width":10,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "height":0,
          "name":"virusLayer",
          "objects":[
                 {
@@ -44,8 +66,8 @@
                  "type":"virus",
                  "visible":true,
                  "width":16,
-                 "x":128,
-                 "y":192
+                 "x":112,
+                 "y":16
                 }, 
                 {
                  "gid":2468,
@@ -64,8 +86,8 @@
                  "type":"virus",
                  "visible":true,
                  "width":16,
-                 "x":48,
-                 "y":144
+                 "x":128,
+                 "y":16
                 }, 
                 {
                  "gid":2512,
@@ -84,13 +106,73 @@
                  "type":"virus",
                  "visible":true,
                  "width":16,
+                 "x":144,
+                 "y":16
+                }, 
+                {
+                 "gid":2424,
+                 "height":16,
+                 "id":28,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"redVirus"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string"
+                    },
+                 "rotation":0,
+                 "type":"virus",
+                 "visible":true,
+                 "width":16,
                  "x":80,
-                 "y":304
+                 "y":128
+                }, 
+                {
+                 "gid":2468,
+                 "height":16,
+                 "id":29,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"yellowVirus"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string"
+                    },
+                 "rotation":0,
+                 "type":"virus",
+                 "visible":true,
+                 "width":16,
+                 "x":32,
+                 "y":192
+                }, 
+                {
+                 "gid":2512,
+                 "height":16,
+                 "id":30,
+                 "name":"",
+                 "properties":
+                    {
+                     "sprite":"blueVirus"
+                    },
+                 "propertytypes":
+                    {
+                     "sprite":"string"
+                    },
+                 "rotation":0,
+                 "type":"virus",
+                 "visible":true,
+                 "width":16,
+                 "x":112,
+                 "y":224
                 }],
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":10,
+         "width":0,
          "x":0,
          "y":0
         }, 
@@ -119,7 +201,7 @@
                  "rotation":0,
                  "type":"playerStart",
                  "visible":true,
-                 "width":16,
+                 "width":32,
                  "x":64,
                  "y":48
                 }],
@@ -130,7 +212,7 @@
          "x":0,
          "y":0
         }],
- "nextobjectid":28,
+ "nextobjectid":31,
  "orientation":"orthogonal",
  "renderorder":"left-down",
  "tileheight":16,
