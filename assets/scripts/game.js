@@ -19,15 +19,32 @@ drMarioGame.Game.prototype = {
 
     //collision on blockedLayer
     this.map.setCollisionBetween(1, 2000, true, 'blockedLayer');
-    // this.map.setCollisionBetween(1, 2000, true, 'virusLayer');
 
     //resizes the game world to match the layer dimensions
     this.backgroundLayer.resizeWorld();
 
+    //single pills
+    // this.game.add.sprite(16, 16, 'singleRed');
+    // this.game.add.sprite(0, 0, 'singleBlue');
+    // this.game.add.sprite(0, 0, 'singleYellow');
+    //
+    // //left half of pills
+    // this.game.add.sprite(0, 0, 'leftGreen');
+    // this.game.add.sprite(0, 0, 'leftRed');
+    // this.game.add.sprite(0, 0, 'leftBlue');
+    // this.game.add.sprite(0, 0, 'leftYellow');
+    //
+    // //right half of pills
+    // this.game.add.sprite(0, 0, 'rightGreen');
+    // this.game.add.sprite(0, 0, 'rightRed');
+    // this.game.add.sprite(0, 0, 'rightBlue');
+    // this.game.add.sprite(0, 0, 'rightYellow');
+
+    //Make Pill combo
+
     this.createVirus();
     // this.createPills();
 
-    //Make Pill combo
     var playerSprite = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
 
 
@@ -45,42 +62,6 @@ drMarioGame.Game.prototype = {
     // move player with cursor keys
     this.cursors = this.game.input.keyboard.createCursorKeys();
 
-  },
-  createVirus: function() {
-    //create virus
-    this.virus = this.game.add.group();
-    this.virus.enableBody = true;
-    var item;
-    result = this.findObjectsByType('virus', this.map, 'virusLayer');
-    result.forEach(function(element) {
-      this.createFromTiledObject(element, this.virus);
-    }, this);
-  },
-
-
-
-
-  // find objects in a Tiled layer that containt a property called "type" equal to a certain value
-  findObjectsByType: function(type, map, layer) {
-    var result = new Array();
-    map.objects[layer].forEach(function(element) {
-      console.log('Whats in my object, Bro?', map.objects[layer]);
-      if (element.type === type) {
-        // Phaser uses top left, Tiled bottom left so we have to adjust
-        element.y -= map.tileHeight;
-        result.push(element);
-      }
-    });
-    return result;
-  },
-  //create a sprite from an object
-  createFromTiledObject: function(element, group) {
-    var sprite = group.create(element.x, element.y, element.properties.sprite);
-
-    //copy all properties to the sprite
-    Object.keys(element.properties).forEach(function(key) {
-      sprite[key] = element.properties[key];
-    });
   },
 
   update: function() {
@@ -103,6 +84,52 @@ drMarioGame.Game.prototype = {
       this.player.body.velocity.x += 100;
       console.log('right');
     }
+
+
+  },
+
+  // Hoisted Functions for Create & Update
+  createVirus: function() {
+    //create virus
+    this.virus = this.game.add.group();
+    this.virus.enableBody = true;
+    // var item;
+    result = this.findObjectsByType('virus', this.map, 'virusLayer');
+    result.forEach(function(element) {
+      this.createFromTiledObject(element, this.virus);
+    }, this);
+  },
+
+  // createNewPill: function() {
+  //   this.pill = this.game.add.group();
+  //   this.pill.enableBody = true;
+  //   var
+  // }
+
+  // find objects in a Tiled layer that containt a property called "type" equal to a certain value
+  findObjectsByType: function(type, map, layer) {
+    var result = new Array();
+    map.objects[layer].forEach(function(element) {
+      console.log('Whats in my object, Bro?', map.objects[layer]);
+      if (element.type === type) {
+        // Phaser uses top left, Tiled bottom left so we have to adjust
+        element.y -= map.tileHeight;
+        result.push(element);
+      }
+    });
+    return result;
+  },
+
+  //create a sprite from an object
+  createFromTiledObject: function(element, group) {
+    var sprite = group.create(element.x, element.y, element.properties.sprite);
+
+    //copy all properties to the sprite
+    Object.keys(element.properties).forEach(function(key) {
+      sprite[key] = element.properties[key];
+    });
   }
+
 };
+
 // CHEERS!!! 🍻
