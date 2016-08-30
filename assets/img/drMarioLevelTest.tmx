@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="left-down" width="10" height="20" tilewidth="16" tileheight="16" nextobjectid="31">
+<map version="1.0" orientation="orthogonal" renderorder="left-down" width="10" height="20" tilewidth="16" tileheight="16" nextobjectid="49">
  <tileset firstgid="1" name="tiles" tilewidth="16" tileheight="16" tilecount="3520" columns="44">
   <image source="tiles.png" trans="ff55ff" width="705" height="1280"/>
  </tileset>
@@ -51,7 +51,7 @@
 970,970,970,970,970,969,969,969,969,969
 </data>
  </layer>
- <layer name="virusgenLayer" width="10" height="20" visible="0">
+ <layer name="virusgenLayer" width="10" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
@@ -75,7 +75,7 @@
 0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="gameoverLayer" width="10" height="20" visible="0">
+ <layer name="gameoverLayer" width="10" height="20">
   <data encoding="csv">
 0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,
@@ -133,6 +133,9 @@
  </objectgroup>
  <objectgroup name="objectsLayer">
   <object id="19" gid="1" x="64" y="48" width="16" height="16"/>
-  <object id="21" type="playerStart" gid="1" x="64" y="48" width="32" height="16"/>
+  <object id="21" type="playerStartLeft" gid="1" x="64" y="48" width="16" height="16"/>
+  <object id="44" type="playerStartRight" gid="1" x="80" y="48" width="16" height="16"/>
+  <object id="47" type="nextPillRight" gid="1" x="80" y="16" width="16" height="16"/>
+  <object id="48" type="nextPillLeft" gid="1" x="64" y="16" width="16" height="16"/>
  </objectgroup>
 </map>
