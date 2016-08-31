@@ -21,6 +21,12 @@ drMarioGame.Game.prototype = {
     //resizes the game world to match the layer dimensions
     this.backgroundLayer.resizeWorld();
 
+    //contains a list of the next pill to be displayed
+    var queue = [];
+
+    var newPill = this.pillRandomizer();
+
+
 
     //Make Pill combo
 
@@ -40,10 +46,11 @@ drMarioGame.Game.prototype = {
     var playerSprite = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
 
 
+
     //Pill spawning location
     // TODO: have the game create a random pill color combo
     var result = this.findObjectsByType('playerStartLeft', this.map, 'objectsLayer')
-    this.player = this.game.add.sprite(result[0].x, result[0].y, 'leftGreen');
+    this.player = this.game.add.sprite(result[0].x, result[0].y, newPill[0]);
     // this.player = this.game.add.group();
     // this.player.create('rightGreen');
     this.game.physics.arcade.enable(this.player);
@@ -123,65 +130,17 @@ drMarioGame.Game.prototype = {
     }, this);
   },
 
-  // The pill that is created and used as the player pill
-  newPill: function() {
-
-    // this.shape = Math.floor(Math.random() * nbBlockTypes);
-    // this.color = Math.floor(Math.random() * nbBlockTypes);
-    // this.sprites = []; // list of the sprites of each block
-    // this.cells = []; // list of the cells occupied by the tetromino
-    // this.center = [0, 0];
-    // // materialize makes the tetromino appear, either in the scene (inGame = true) or on the right (inGame = false) if it's the next tetromino
-    // this.materialize = function(c_x, c_y, inGame) {
-    //   this.center = [c_x, c_y];
-    //   this.cells = [];
-    //   // clean previous sprites if any
-    //   for (var j = 0; j < this.sprites.length; j++) {
-    //     this.sprites[j].destroy();
-    //   }
-    //   this.sprites = [];
-    //   var conflict = false; // Are there occupied cells where the tetrominon will appear? If yes -> game over
-    //   for (var i = 0; i < blocksPerTetromino; i++) {
-    //     // Compute the coordinates of each block of the tetromino, using it's offset from the center
-    //     var x = c_x + offsets[this.shape][i][0];
-    //     var y = c_y + offsets[this.shape][i][1];
-    //     var sprite = game.add.sprite(x * blockSize, y * blockSize, 'blocks', this.color);
-    //     this.sprites.push(sprite);
-    //     this.cells.push([x, y]);
-    //     if (inGame) {
-    //       if (!validateCoordinates(x, y)) {
-    //         conflict = true;
-    //       }
-    //       scene[x][y] = blockValue; // 1 for blocks of current tetromino, 2 for fallen blocks
-    //     }
-    //   }
-    //   return conflict;
-
-    // createPill: function() {
-    // var pillColorLeft = Math.floor(Math.random() * 3);
-    // var pillColorRight = Math.floor(Math.random() * 3);
-
-    //   var pill = {
-    //     if (pillColorLeft === 1) {
-    //
-    //     }
-    //     thePlayer: true,
-    //     stopped: false,
-    //     pillRotation: 0,
-    //     pos1Index: startPill,
-    //     position: virusPositions[startPill],
-    //     pillColor1: pieceColors[pillColor1],
-    //
-    //     pos2Index: startPill + 1,
-    //     position2: virusPositions[startPill + 1],
-    //     pillColor2: pieceColors[pillColor2]
-    //   }
-    //
-    //   return pill;
-    //
-    // }
-
+  //
+  pillRandomizer: function() {
+    var left = ['leftRed', 'leftYellow', 'leftBlue'];
+    var right = ['rightRed', 'rightYellow', 'rightBlue'];
+    var pill = [];
+    pill.push(left[Math.floor(Math.random() * 3)]);
+    pill.push(right[Math.floor(Math.random() * 3)]);
+    console.log(pill);
+    return pill;
   },
+
   // spawn a new pill and the scene and update the next one
   // managePills();
 
@@ -239,7 +198,7 @@ drMarioGame.Game.prototype = {
 // this.game.add.sprite(0, 0, 'singleBlue');
 // this.game.add.sprite(0, 0, 'singleYellow');
 //
-// //left half of pills
+//left half of pills
 // this.game.add.sprite(0, 0, 'leftGreen');
 // this.game.add.sprite(0, 0, 'leftRed');
 // this.game.add.sprite(0, 0, 'leftBlue');
