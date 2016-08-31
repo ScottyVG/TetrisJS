@@ -22,9 +22,13 @@ drMarioGame.Game.prototype = {
     this.backgroundLayer.resizeWorld();
 
     //contains a list of the next pill to be displayed
-    var queue = [];
+    // var queuePill = this.pillRandomizer();
+    // var queueLeft = this.findObjectsByType('nextPillLeft', this.map, 'objectsLayer')
+    // this.queue = this.game.add.sprite(0, 0, newPill[0]);
+    // var queueRight = this.findObjectsByType('nextPillRight', this.map, 'objectsLayer')
+    // this.queue = this.game.add.sprite(0, 0, newPill[1]);
 
-    var newPill = this.pillRandomizer();
+    var newPillValue = this.pillRandomizer();
 
 
 
@@ -43,19 +47,21 @@ drMarioGame.Game.prototype = {
     // virus.setAll('checkWorldBounds', true);
 
     //Player Spawing Location
-    var playerSprite = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
+    // var playerSprite1 = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
 
+    var newPill = this.game.add.group();
+    for (var i = 0; i < 2; i++) {
+      newPill.create(0 + (i * 16), 0, newPillValue[i]);
+    }
+    // this.newPill.create(0, 0, newPillValue[0]);
+    // this.newPill.create(16, 0, newPillValue[1]);
 
-
-    //Pill spawning location
-    // TODO: have the game create a random pill color combo
+    // Spawn a new pill
+    this.player = this.game.add.group();
     var result = this.findObjectsByType('playerStartLeft', this.map, 'objectsLayer')
-    this.player = this.game.add.sprite(result[0].x, result[0].y, newPill[0]);
-    // this.player = this.game.add.group();
-    // this.player.create('rightGreen');
+    this.player = this.game.add.sprite(result[0].x, result[0].y, newPillValue[0]);
+    this.player = this.game.add.sprite(result[0].x + 16, result[0].y, newPillValue[1]);
     this.game.physics.arcade.enable(this.player);
-    // this.game.add.sprite(0, 0, 'leftGreen');
-    // this.game.add.sprite(0, 0, 'rightGreen');
 
     //Virus spawning
     // var result = this.findObjectsByType('virus', this.map, 'virusLayer')
@@ -139,6 +145,10 @@ drMarioGame.Game.prototype = {
     pill.push(right[Math.floor(Math.random() * 3)]);
     console.log(pill);
     return pill;
+  },
+
+  destroy: function(sprite) {
+    sprite.destroy();
   },
 
   // spawn a new pill and the scene and update the next one
