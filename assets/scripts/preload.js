@@ -23,12 +23,10 @@ drMarioGame.Preload.prototype = {
     this.load.image('singleBlue', 'assets/img/singleBlue.png');
     this.load.image('singleYellow', 'assets/img/singleYellow.png');
     //load left half of pills
-    this.load.image('leftGreen', 'assets/img/leftGreen.png');
     this.load.image('leftRed', 'assets/img/leftRed.png');
     this.load.image('leftBlue', 'assets/img/leftBlue.png');
     this.load.image('leftYellow', 'assets/img/leftYellow.png');
     //load right half of pills
-    this.load.image('rightGreen', 'assets/img/rightGreen.png');
     this.load.image('rightRed', 'assets/img/rightRed.png');
     this.load.image('rightBlue', 'assets/img/rightBlue.png');
     this.load.image('rightYellow', 'assets/img/rightYellow.png');
